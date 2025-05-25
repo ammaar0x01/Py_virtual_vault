@@ -7,7 +7,7 @@ _notes.txt
 _log.log 
 _deleted.del 
 
-dependencies/database_test1.db 
+dependencies/_database_test1.db 
 dependencies/__pycache__
 
 _temp.py 
