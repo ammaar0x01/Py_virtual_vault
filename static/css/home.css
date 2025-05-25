@@ -1,0 +1,99 @@
+/*
+home.css
+========
+*/
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/static/fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
+/* ---------------------- */
+
+
+/* SECTION */
+section {
+  background-color: transparent;
+}
+/* ---------------------- */
+
+/* shell */
+section .shell {
+  background-color: rgba(0, 0, 0, 0.829);
+  margin: 10px;
+  transition: 400ms ease;
+}
+
+section .shell:hover {
+  box-shadow: 1px 1px 10px black;
+}
+
+/* title bar */
+.shell .title-bar {
+  background-color: white;
+  padding: 1px 5px;
+}
+
+.title-bar li {
+  list-style: none;
+  color: red;
+  margin: 2px;
+}
+
+.title-bar .flex-grow-1 {
+  color: black;
+  font-family: "Orbitron", sans-serif;
+}
+
+.title-bar a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 400ms ease;
+  outline:none; 
+}
+
+.title-bar a:hover,
+.title-bar a:focus {
+  background-color: rgb(20, 5, 0);
+  color: white;
+}
+/* -------------------------- */
+
+
+/* in the shell window */
+.display-6 span {
+  width: fit-content;
+  font-family: "Orbitron", sans-serif;
+  font-size: 32px;
+  margin: 10px;
+}
+
+ul p {
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+#options li a {
+  text-decoration: none;
+  color: rgb(232, 232, 253);
+  transition: 800ms ease;
+  outline: none;
+  font-family: "Orbitron", sans-serif;
+  font-size:12px; 
+}
+
+#options li a:hover,
+#options li a:focus {
+  color: rgb(255, 255, 255);
+  font-family: "Orbitron", sans-serif;
+  padding-left:10px; 
+}
+/* -------------------------- */

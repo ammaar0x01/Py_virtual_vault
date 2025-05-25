@@ -1,0 +1,63 @@
+/*
+page-tasks.css
+==============
+*/
+
+
+/* BOOTSTRAP OVERRIDES */
+.accordion-item .display-6{
+  font-size:20px; 
+  font-weight:400; 
+}
+
+.accordion-body p{
+  margin-bottom:0px; 
+}
+/* -------------------------- */
+
+/* Accordion */
+/* accordion header */
+.accordion-button {
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(0, 0, 0);
+}
+
+.accordion-item {
+  margin:0; 
+}
+
+/* labels */
+.accordion-button strong {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  font-size: 16px;
+  border: 1px solid red;
+  margin: 0px 10px;
+}
+.accordion-button b {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(238, 255, 0);
+  font-size: 16px;
+  border: 1px solid rgb(229, 255, 0);
+  margin: 0px 10px;
+}
+
+/* more details */
+.accordion-item pre {
+    font-size: 14px;
+    font-weight:100; 
+    line-height: 1rem;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    color:white; 
+    background-color:#ed5664;
+}
+
+.container .btn-outline-light{
+  border:1px solid var(--color1); 
+  color: black;
+}
+/* -------------------------- */

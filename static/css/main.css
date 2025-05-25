@@ -1,0 +1,105 @@
+/* 
+Filename: main.css 
+Started:  11.04.25
+Updated:  03.05.25
+===================
+*/
+
+:root{
+  --bg-color:#ed5664;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 400ms ease; 
+}
+
+/* for offline fonts */
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/static/fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+}
+/* ------------------- */
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------------ */
+
+/* HEADER */
+header {
+  background-color: var(--bg-color);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  padding: 8vh 20px 20px 20px;
+  font-style: normal;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+header h1:hover {
+  text-shadow: 10px 10px 1px #ee094d;;
+}
+/* -------------------------- */
+
+/* MAIN */
+main {
+  background-image: none;
+  background-color: var(--bg-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: white;
+  transition: 400ms ease;
+}
+/* -------------------------- */
+
+/* BOOTSTRAP OVERRIDES */
+/* text */
+.display-6 {
+  font-size: 30px;
+  font-family: 100;
+}
+
+/* navbar */
+.navbar{
+  background-color: rgba(0, 0, 0);
+  padding:10px 20px;
+  font-weight: 100;
+}
+
+.navbar .nav-link{
+  font-family: 'Orbitron';
+  outline:none; 
+  border:none; 
+}
+.navbar .nav-link:focus{
+  color:rgb(255, 255, 255);
+}
+
+.navbar .navbar-brand{
+  font-family: 'Orbitron';
+  font-style: normal;
+  line-height: 10vh;
+  color:var(--bg-color);
+  transition: 400ms ease; 
+}
+.navbar .navbar-brand:hover{
+  color:rgb(255, 255, 255); 
+}
+/* -------------------------- */

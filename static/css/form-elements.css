@@ -1,0 +1,256 @@
+/* 
+form-elements.css
+=================
+*/
+
+:root{
+  --bg-color:#ed5664;
+  --color1:black; 
+  --color2:white; 
+}
+/* -------------------------- */
+
+/* MAIN */
+main {
+  overflow-x: hidden;
+}
+
+/* flash message */
+main .flash-message {
+  background-color: var(--bg-color);
+  color: var(--color2);
+  padding:20px 10px; 
+}
+/* =============== */
+
+/* SECTION */
+/* input boxes */
+section input::placeholder {
+  color: var(--color2);
+}
+
+section input {
+  background-color: transparent;
+  border: 1px solid var(--color1);
+  outline: none;
+  padding: 5px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+section input:focus {
+  background-color: var(--color1);
+  color:var(--color2);
+}
+/* =============== */
+
+/* textarea */
+section textarea::placeholder{
+  color:var(--color2);
+}
+section textarea {
+  background-color: transparent;
+  border: 1px solid var(--color1);
+  outline: none;
+  padding: 5px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  min-height: 90px;
+  max-height: 300px;
+}
+section textarea:focus {
+  background-color: var(--color1);
+  color:var(--color2);
+}
+/* =============== */
+
+/* collection */
+section .collection {
+  color: var(--color2);
+  margin: 0px;
+}
+
+section .collection form {
+  width: fit-content;
+  background-color: transparent;
+  padding: 4vh 4vh;
+  margin: 10px;
+  border: 1px solid var(--color1);
+}
+section .collection form:hover {
+  box-shadow: 10px 10px 0px var(--color1);
+}
+
+section .collection .btn {
+  border-radius: 0px;
+  border: 1px solid var(--color2);
+  font-weight: 100;
+}
+section .collection .btn:focus,
+section .collection .btn:hover {
+  background-color: var(--color2);
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: 1px solid var(--color1);
+}
+/* =============== */
+
+/* combobox */
+section select {
+  background-color: transparent;
+  border: 1px solid var(--color1);
+  padding: 5px 10px;
+  font-weight: 300;
+  outline: none;
+}
+section select:focus {
+  background-color: #bb4d00;
+}
+
+section option {
+  background-color: var(--color1); 
+  font-weight: 300;
+}
+/* =============== */
+
+
+/* filter */
+.filter-block {
+  background-color: var(--color1);
+  transition: 400ms ease;
+}
+
+.filter-block select {
+  border: 1px solid var(--color2);
+  height: 40px;
+  margin-left: 10px;
+  background-color: var(--color2);
+  color: var(--color1);
+}
+.filter-block select:focus {
+  background-color: #bb4d00;
+  color: var(--color2);
+}
+
+.filter-block .btn {
+  border-radius: 0px;
+  height: 40px;
+  margin: 0px 0px 0px 10px;
+  border: 1px solid var(--color2);
+  transition: 400ms ease;
+}
+
+#filter-btn{
+  border:1px solid var(--color2); 
+  color: var(--color2); 
+}
+#filter-btn:hover, 
+#filter-btn:focus{
+  color: var(--color1); 
+  background-color: var(--color2);
+  outline:none;  
+}
+/* =============== */
+
+/* badge */
+#category-badge {
+  border: 1px solid var(--color1);
+  background-color: var(--color2);
+  color: var(--color1);
+  cursor: default;
+  font-weight: 400;
+  font-size: 14px;
+  padding:8px; 
+}
+/* =============== */
+/* -------------------------- */
+
+/* BOOTSTRAP OVERRIDES */
+/* Alert */
+.flash-message .alert{
+  margin:20px 0px 0px 0px; 
+  max-width: 500px; 
+  background-color: rgba(0, 0, 0, 0.4);
+  color:var(--color2);
+  transition: 400ms ease; 
+}
+.flash-message .alert:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* =============== */
+
+/* Icons */
+.bi-suit-heart-fill{
+  color: var(--color1); 
+  margin:0px 20px 0px 0px
+}
+/* =============== */
+
+/* Filter container */
+form .container {
+  box-shadow: none !important;
+}
+
+#section-read .container {
+  max-width: 600px;
+  box-shadow: 10px 10px 0px var(--color1);
+  border:1px solid var(--color1); 
+}
+/* =============== */
+
+/* Switch-button */
+.form-check-input {
+  background-color: transparent;
+}
+/* =============== */
+
+/* ===================================== */
+/* Accordion */
+.accordion {
+  margin: 4vh 0px;
+}
+
+/* complete accordian item */
+.accordion-item {
+  background-color:rgb(248, 60, 85);
+  border: 1px solid var(--color1);
+  margin: 20px 10px;
+}
+
+/* accordion header */
+.accordion-button {
+  background-color: var(--color1);
+  border: none;
+  font-weight: 100;
+  font-size: 16px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.accordion-button:focus,
+.accordian-button:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+  box-shadow: none;
+}
+
+/* buttons */
+/* .btn-outline-light */
+.accordion .btn-outline-light{
+  border:1px solid var(--color1); 
+  color: var(--color1);
+}
+
+/* .btn-light */
+.accordion .btn-light {
+  background-color: #d3d4d5;
+  border-color: var(--color1);
+}
+.accordion .btn-light:hover,
+.accordion .btn-light:focus {
+  border-color: var(--color1);
+  background-color: var(--color2);
+  color: var(--color1);
+}
+/* ===================================== */
+/* -------------------------- */

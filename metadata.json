@@ -1,0 +1,30 @@
+{
+    "": ":)", 
+    "started": "24.04.25", 
+    "updated": "11.05.25", 
+    "project": "youtube_favorites", 
+    "description": "a web-app for storing your favorite youtube videos", 
+    "creator": "_runnur_ || ammaar0x01",
+    "github": "https://github.com/ammaar0x01",
+    "other_websites": [
+        "https://ammaar0x01.netlify.app", 
+        "https://youtube-favs.netlify.app", 
+        "https://ammaar0x01-websites.netlify.app"
+    ],
+    "routes_main": [
+        "{error, 404}", 
+        "./", 
+        "./home",
+        "./api-docs",
+        "./cli", 
+        "./videos", 
+        "./channels", 
+        "./tasks",
+        "./webpages", 
+        "./update-video", 
+        "./update-channel",
+        "./update-task",
+        "./update-webpage"
+    ], 
+    "num_of_pages": 12
+}

@@ -1,0 +1,36 @@
+/*
+page-webpages.css
+===============
+*/
+
+:root{
+  --bg-color:#ed5664;
+  --color1:black; 
+  --color2:white; 
+}
+/* -------------------------- */
+
+
+/* BOOTSTRAP OVERRIDES */
+/* Icons */
+.bi-suit-heart-fill {
+  color: orangered;
+  margin: 0px 20px 0px 20px
+}
+/* ------------- */
+
+/* Text */
+.filter-block .text-warning{
+  color:white !important; 
+}
+/* ------------- */
+/* -------------------------- */
+
+
+/* MY CSS OVERRIDES */
+/* Badge */
+#category-badge {
+  color:var(--color2); 
+  background-color: var(--color1);
+}
+/* -------------------------- */

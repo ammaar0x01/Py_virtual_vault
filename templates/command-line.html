@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VV - CLI</title>
+    <link rel="icon" type="icon" href="{{url_for('static', filename='img/icons8-favorite-folder-32.png')}}">
+    <base target="_blank">
+
+    <!-- =============================================== -->
+    <!-- FONTS -->
+    <!-- local -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/Orbitron/Orbitron-VariableFont_wght.ttf') }}">
+    <!-- =============================================== -->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cli.css') }}">
+    <style>
+   
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1 class="display-3 p-5 pb-2 text-center">
+                Welcome to the Virtual Vault, 
+                <span style="color:orange;">{{ pc_username }}</span>
+            </h1>
+            <p>Type <span style="color:orange;">'help'</span> for guidance</p>
+           
+        </header>
+
+        <p id="cmd">
+            <i>{{ pc_username }}@yf:~$</i>
+            <input id="user-input" type="text">
+        </p>
+
+        <p id="usage-time"></p>
+
+        <p class="feedback"></p>
+
+        <p class="history"></p>
+
+        <div id="section-browser-details">
+            <h6>Browser details</h6>
+        
+            <table>
+                <tbody>
+                    <!-- code from commandLine.js -->
+                </tbody>
+            </table>
+        </div> 
+    </section>
+</body>
+
+<!-- SCRIPTS -->
+<script src="{{ url_for('static', filename='js/commandLine.js') }}"></script>
+
+</html>

@@ -1,0 +1,155 @@
+/* 
+cli.css
+=======
+*/
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/static/fonts/Orbitron/Orbitron-VariableFont_wght.ttf")
+    format("truetype");
+}
+/* ---------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: darken;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+i {
+  font-style: normal;
+}
+/* ---------------------------------------- */
+
+@keyframes color-shift {
+    0%{
+      color:white; 
+    }
+    20%{
+      color:yellow; 
+    }
+    40%{
+      color:orange; 
+    }
+    60%{
+      color:red; 
+    }
+    80%{
+      color:purple; 
+    }
+    90%{
+      color:aqua; 
+    }
+    100%{
+      color:white; 
+    }
+}
+/* ---------------------------------------- */
+
+/* HEADER */
+header {
+  margin: 10px 0px 20px 0px;
+  font-family: "Orbitron", sans-serif;
+}
+header h1 {
+  padding: 10px 0px;
+  font-size: 30px;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+}
+/* ---------------------------------------- */
+
+/* SECTION */
+section {
+  height: 100vh;
+  color: white;
+  padding: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* user-input */
+#cmd {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#cmd i{
+  color:rgb(255, 255, 255); 
+  animation: 20s color-shift ease; 
+  animation-delay:2s; 
+}
+
+
+#cmd #user-input {
+  font-family: "Orbitron", sans-serif;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 70vw;
+  color: white;
+}
+
+/* invisible info */
+section #usage-time {
+  margin: 10px 0px 20px 0px;
+}
+
+section .feedback {
+  color: orangered;
+}
+section .history {
+  color: rgb(255, 255, 255);
+}
+
+
+/* browser details */
+#section-browser-details{
+  font-family: "Orbitron", sans-serif;
+}
+
+/* browser details */
+/* help section; show the commands */
+#section-browser-details, 
+#section-commands{
+  font-family: "Orbitron", sans-serif;
+}
+
+#section-browser-details h6, 
+#section-commands h6 {
+  font-size:16px; 
+  font-weight:100; 
+  margin: 10px 0px 1px 0px;
+  color: rgb(255, 255, 255);
+}
+
+table p {
+  font-size: 12px;
+  padding: 0px 0px 5px 0px;
+  margin: 0px;
+  text-align: left;
+  font-weight:100; 
+  color: orange;
+}
+
+table .column2{
+  padding-left: 10px; 
+}
+/* ---------------------------------------- */

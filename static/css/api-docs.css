@@ -1,0 +1,63 @@
+/*
+api-docs.css
+============
+*/
+
+:root {
+  --bg-color: #ed5664;
+  --color1: black;
+  --color2: white;
+}
+/* -------------------------- */
+
+body {
+    color: var(--color2);
+    background-color: var(--color1);
+    background-image: none;
+}
+/* ----------------------------------- */
+
+/* HEADER */
+header {
+    background-color: var(--color1);
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: none;
+    padding: 4vh 20px 4px 20px;
+    font-style: normal;
+    font-size: 6vh;
+    color: var(--color2);
+    margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+}
+/* ----------------------------------- */
+
+/* MAIN */
+main {
+    margin: 0;
+    background-color: var(--color1);
+    font-size: 2vh;
+}
+
+section {
+    min-height: 70vh;
+    padding:20px 20px; 
+}
+
+.block {
+    padding:20px;
+    border:1px solid var(--bg-color);; 
+    max-width:500px; 
+}
+/* ----------------------------------- */
+
+/* BOOTSTRAP OVERRIDES */
+.text-primary {
+    color: var(--bg-color) !important;
+}
+/* ----------------------------------- */

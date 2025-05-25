@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Update, Task</title>
+    <link rel="icon" type="icon" href="{{url_for('static', filename='img/icons8-favorite-folder-32.png')}}">
+
+    <!-- -------------------------- -->
+    <!-- BOOTSTRAP -->
+    <!-- local -->
+    <link href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='bootstrap/bootstrap.bundle.min.js') }}"></script>
+    <!-- -------------------------- -->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form-elements.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/update.css') }}">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>Update, Task</h1>
+
+            <form action="/update-task/{{ task[0] }}" method="POST">
+                <input type="text" name="update-task-text" value="{{ task[1] }}" placeholder="Task text" required>
+
+                <textarea name="update-task-details" placeholder="Task details">{{ task[2] }}</textarea>
+
+                <div class="form-check form-switch mt-3">
+                    {% if task[3] %}
+                    <input class="form-check-input" name="update-is-priority" type="checkbox" role="switch" id="switch1"
+                        value="yes" checked>
+                    {% else %}
+                    <input class="form-check-input" name="update-is-priority" type="checkbox" role="switch" id="switch1"
+                        value="yes">
+                    {% endif %}
+
+                    <label class="form-check-label" for="switch1">Priority</label>
+                </div>
+
+                <div class="form-check form-switch">
+                    {% if task[4] %}
+                    <input class="form-check-input" name="update-is-repetitive" type="checkbox" role="switch"
+                        id="switch2" value="yes" checked>
+
+                    {% else %}
+                    <input class="form-check-input" name="update-is-repetitive" type="checkbox" role="switch"
+                        id="switch2" value="yes">
+                    {% endif %}
+
+                    <label class="form-check-label" for="switch2">Repetitive</label>
+                </div>
+
+
+                <button class="btn w-50 mb-3" id="btn-update" type="submit">Update details</button>
+            </form>
+            <a href="{{ url_for('controller_task.tasks_get') }}" class="btn btn-outline-light w-50 mb-3">Go Back</a>
+        </div>
+    </section>
+</body>
+
+</html>
