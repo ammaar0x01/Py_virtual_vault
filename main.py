@@ -34,6 +34,6 @@ def error_page_not_found(error):
 if __name__ == "__main__":
     Record.log_file()
     Record.back_up_important_files()
-    app.run(debug=True)
+    # app.run(debug=True)
 
 # -------------------------------------     
